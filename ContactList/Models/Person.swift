@@ -11,37 +11,22 @@ struct Person {
     let phoneNumber: String
     
     static func getPerson() -> [Person] {
-        [
-            Person(
-                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
-                email: DataManager().emails.randomElement() ?? "",
-                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
-            ),
-            Person(
-                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
-                email: DataManager().emails.randomElement() ?? "",
-                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
-            ),
-            Person(
-                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
-                email: DataManager().emails.randomElement() ?? "",
-                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
-            ),
-            Person(
-                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
-                email: DataManager().emails.randomElement() ?? "",
-                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
-            ),
-            Person(
-                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
-                email: DataManager().emails.randomElement() ?? "",
-                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
-            ),
-            Person(
-                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
-                email: DataManager().emails.randomElement() ?? "",
-                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
+        var persons: [Person] = []
+        var names = DataManager().names.shuffled()
+        var surnames = DataManager().surnames.shuffled()
+        var emails = DataManager().emails.shuffled()
+        var phoneNumbers = DataManager().phoneNumbers.shuffled()
+        
+        DataManager().names.forEach { _ in
+            persons.append(
+                Person(
+                    fullName: names.remove(at: 0) + " " + surnames.remove(at: 0),
+                    email: emails.remove(at: 0),
+                    phoneNumber: phoneNumbers.remove(at: 0)
+                )
             )
-        ]
+        }
+        
+        return persons
     }
 }
