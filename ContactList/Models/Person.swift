@@ -6,8 +6,42 @@
 //
 
 struct Person {
-    let name: String
-    let surname: String
+    let fullName: String
     let email: String
     let phoneNumber: String
+    
+    static func getPerson() -> [Person] {
+        [
+            Person(
+                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
+                email: DataManager().emails.randomElement() ?? "",
+                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
+            ),
+            Person(
+                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
+                email: DataManager().emails.randomElement() ?? "",
+                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
+            ),
+            Person(
+                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
+                email: DataManager().emails.randomElement() ?? "",
+                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
+            ),
+            Person(
+                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
+                email: DataManager().emails.randomElement() ?? "",
+                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
+            ),
+            Person(
+                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
+                email: DataManager().emails.randomElement() ?? "",
+                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
+            ),
+            Person(
+                fullName: "\(DataManager().names.randomElement() ?? "") \(DataManager().surnames.randomElement() ?? "")",
+                email: DataManager().emails.randomElement() ?? "",
+                phoneNumber: DataManager().phoneNumbers.randomElement() ?? ""
+            )
+        ]
+    }
 }
