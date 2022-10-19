@@ -5,7 +5,7 @@
 //  Created by Andrey Sandler on 18.10.2022.
 //
 
-class DataManager {
+class DataStore {
     let names = [
         "Hasanshik",
         "Andrey",

@@ -12,12 +12,12 @@ struct Person {
     
     static func getPerson() -> [Person] {
         var persons: [Person] = []
-        var names = DataManager().names.shuffled()
-        var surnames = DataManager().surnames.shuffled()
-        var emails = DataManager().emails.shuffled()
-        var phoneNumbers = DataManager().phoneNumbers.shuffled()
+        var names = DataStore().names.shuffled()
+        var surnames = DataStore().surnames.shuffled()
+        var emails = DataStore().emails.shuffled()
+        var phoneNumbers = DataStore().phoneNumbers.shuffled()
         
-        DataManager().names.forEach { _ in
+        DataStore().names.forEach { _ in
             persons.append(
                 Person(
                     fullName: names.remove(at: 0) + " " + surnames.remove(at: 0),

@@ -14,7 +14,7 @@
 		83348FBB28FED2120022426A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83348FB928FED2120022426A /* LaunchScreen.storyboard */; };
 		83348FC828FED7F80022426A /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83348FC728FED7F80022426A /* ContactListViewController.swift */; };
 		83348FCA28FEDB490022426A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83348FC928FEDB490022426A /* Person.swift */; };
-		83348FCD28FEDD170022426A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83348FCC28FEDD170022426A /* DataManager.swift */; };
+		83348FCD28FEDD170022426A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83348FCC28FEDD170022426A /* DataStore.swift */; };
 		83348FD028FF039F0022426A /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83348FCF28FF039F0022426A /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		83348FBC28FED2120022426A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83348FC728FED7F80022426A /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		83348FC928FEDB490022426A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		83348FCC28FEDD170022426A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		83348FCC28FEDD170022426A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		83348FCF28FF039F0022426A /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 		83348FCE28FEDD1D0022426A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				83348FCC28FEDD170022426A /* DataManager.swift */,
+				83348FCC28FEDD170022426A /* DataStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83348FAF28FED2120022426A /* AppDelegate.swift in Sources */,
-				83348FCD28FEDD170022426A /* DataManager.swift in Sources */,
+				83348FCD28FEDD170022426A /* DataStore.swift in Sources */,
 				83348FD028FF039F0022426A /* ContactDetailsViewController.swift in Sources */,
 				83348FB128FED2120022426A /* SceneDelegate.swift in Sources */,
 				83348FCA28FEDB490022426A /* Person.swift in Sources */,
