@@ -6,23 +6,30 @@
 //
 
 struct Person {
-    let fullName: String
+    let name: String
+    let surname: String
     let email: String
     let phoneNumber: String
     
+    var fullname: String {
+        name + " " + surname
+    }
+    
     static func getPerson() -> [Person] {
-        var persons: [Person] = []
-        var names = DataStore().names.shuffled()
-        var surnames = DataStore().surnames.shuffled()
-        var emails = DataStore().emails.shuffled()
-        var phoneNumbers = DataStore().phoneNumbers.shuffled()
+        let names = DataStore().names.shuffled()
+        let surnames = DataStore().surnames.shuffled()
+        let emails = DataStore().emails.shuffled()
+        let phoneNumbers = DataStore().phoneNumbers.shuffled()
         
-        DataStore().names.forEach { _ in
+        var persons: [Person] = []
+        
+        for index in 0..<names.count {
             persons.append(
                 Person(
-                    fullName: names.remove(at: 0) + " " + surnames.remove(at: 0),
-                    email: emails.remove(at: 0),
-                    phoneNumber: phoneNumbers.remove(at: 0)
+                    name: names[index],
+                    surname: surnames[index],
+                    email: emails[index],
+                    phoneNumber: phoneNumbers[index]
                 )
             )
         }

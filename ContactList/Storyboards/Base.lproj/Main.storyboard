@@ -76,7 +76,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EEr-xB-Bjj">
-                                <rect key="frame" x="16" y="235.33333333333334" width="91.666666666666671" height="20.333333333333343"/>
+                                <rect key="frame" x="16" y="235.33333333333331" width="91.666666666666671" height="20.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxF-6w-90c">
                                         <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="20.333333333333332"/>
