@@ -19,8 +19,8 @@ class ContactDetailsViewController: UIViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationItem.title = person.fullname
+        
+        title = person.fullname
         phoneLabel.text = person.phoneNumber
         emailLabel.text = person.email
     }
